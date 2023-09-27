@@ -1,2 +1,2 @@
-#### Nara's snake
+#### snake
 
