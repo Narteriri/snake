@@ -14,36 +14,14 @@ import java.util.Map;
 public class IndexController {
 
     @RequestMapping("getbotinfo/")
-    @ResponseBody
-    public List<Map<String, String>> getBotInfo(){
-
-        // List<String> list = new ArrayList<>();
-        // list.add("Nara");
-        // list.add("Narion");
-
-        List<Map<String, String>> bots = new ArrayList<>();
+    @ResponseBody                   // localhost:3030/pk/getbotinfo/
+    public Map<String, String> getBotInfo(){
 
         Map<String, String> bot1 = new HashMap();
-        bot1.put("Name", "Nara");
-        bot1.put("Power", "666666666");
-        bots.add(bot1);
+        bot1.put("name", "Nara");
+        bot1.put("power", "666666666");
 
-        Map<String, String> bot2 = new HashMap();
-        bot2.put("Name", "Nara");
-        bot2.put("Power", "666666666");
-        bots.add(bot2);
-
-        return bots;
+        return bot1;
     }
 
-    @RequestMapping("index/")
-    public String index() {
-        return "pk/index.html";
-    }
-
-    @RequestMapping("test/")
-    @ResponseBody
-    public String test() {
-        return "Hello World!";
-    }
 }
