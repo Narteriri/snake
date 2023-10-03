@@ -22,7 +22,7 @@
 
 <style>
   body {
-    background-image: url("@/assets/bg1.png");
+    background-image: url("@/assets/images/bg1.png");
     background-size: cover;
   }
 </style>
